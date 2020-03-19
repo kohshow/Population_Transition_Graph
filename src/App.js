@@ -94,9 +94,6 @@ class App extends Component {
       xAxis: {
         title: {
           text: '年度'
-        },
-        accessibility: {
-          rangeDescription: 'Range: 2010 to 2017'
         }
       },
       legend: {
@@ -117,7 +114,8 @@ class App extends Component {
     };
     return (
       <div>
-        <h1>都道府県</h1>
+        <h1>都道府県別の総人口推移グラフ</h1>
+        <h2>都道府県</h2>
         {Object.keys(data).map(i => this.renderItem(data[i]))}
         <HighchartsReact highcharts={Highcharts} options={options} />
       </div>
