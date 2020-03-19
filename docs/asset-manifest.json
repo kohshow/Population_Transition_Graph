@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/Population_Transition_Graph/static/css/main.d1b05096.chunk.css",
+    "main.js": "/Population_Transition_Graph/static/js/main.bbf3228b.chunk.js",
+    "main.js.map": "/Population_Transition_Graph/static/js/main.bbf3228b.chunk.js.map",
+    "runtime-main.js": "/Population_Transition_Graph/static/js/runtime-main.ff34b7a0.js",
+    "runtime-main.js.map": "/Population_Transition_Graph/static/js/runtime-main.ff34b7a0.js.map",
+    "static/js/2.6dad48dc.chunk.js": "/Population_Transition_Graph/static/js/2.6dad48dc.chunk.js",
+    "static/js/2.6dad48dc.chunk.js.map": "/Population_Transition_Graph/static/js/2.6dad48dc.chunk.js.map",
+    "index.html": "/Population_Transition_Graph/index.html",
+    "precache-manifest.fe07a49b67065988f7369a61d15adb90.js": "/Population_Transition_Graph/precache-manifest.fe07a49b67065988f7369a61d15adb90.js",
+    "service-worker.js": "/Population_Transition_Graph/service-worker.js",
+    "static/css/main.d1b05096.chunk.css.map": "/Population_Transition_Graph/static/css/main.d1b05096.chunk.css.map",
+    "static/js/2.6dad48dc.chunk.js.LICENSE.txt": "/Population_Transition_Graph/static/js/2.6dad48dc.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ff34b7a0.js",
+    "static/js/2.6dad48dc.chunk.js",
+    "static/css/main.d1b05096.chunk.css",
+    "static/js/main.bbf3228b.chunk.js"
+  ]
+}
