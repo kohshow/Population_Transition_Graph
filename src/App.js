@@ -10,6 +10,7 @@ class App extends Component {
       prefectures: {},
       series: []
     };
+    this._changeSelection = this._changeSelection.bind(this);
   }
 
   componentDidMount() {
@@ -24,6 +25,18 @@ class App extends Component {
 
   _changeSelection(index) {
     // チェックボックスの動作
+    const selected_copy = this.state.selected.slice();
+    selected_copy[index] = !selected_copy[index];
+
+    if (!this.state.selected[index]) {
+      this.setState({
+        //selected: selected_copy
+      });
+    } else {
+      this.setState({
+        //selected: selected_copy
+      });
+    }
   }
 
   renderItem(props) {
