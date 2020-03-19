@@ -12,7 +12,7 @@ export default 'X-API-KEY';
 
 `$ yarn start`
 
-## reference
+## Reference
 
 - RESAS API: https://opendata.resas-portal.go.jp/
 - RESAS API仕様書: https://opendata.resas-portal.go.jp/docs/api/v1/index.html
