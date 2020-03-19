@@ -41,7 +41,9 @@ class App extends Component {
         let tmp = [];
         // data[0]はlabel="総人口"に相当する
         Object.keys(res.result.data[0].data).forEach(i => {
-          tmp.push(res.result.data[0].data[i].value);
+          if (res.result.data[0].data[i].year < 2020) {
+            tmp.push(res.result.data[0].data[i].value);
+          }
         });
         const res_series = {
           name: this.state.prefectures[index].prefName,
@@ -56,7 +58,7 @@ class App extends Component {
       const series_copy = this.state.series.slice();
       // チェック済みの場合: seriesから除外
       for (let i = 0; i < series_copy.length; i++) {
-        if (series_copy[i].name == this.state.prefectures[index].prefName) {
+        if (series_copy[i].name === this.state.prefectures[index].prefName) {
           series_copy.splice(i, 1);
         }
       }
@@ -106,8 +108,8 @@ class App extends Component {
           label: {
             connectorAllowed: false
           },
-          pointInterval: 3,
-          pointStart: 1970
+          pointInterval: 5,
+          pointStart: 1965
         }
       },
       series: this.state.series
