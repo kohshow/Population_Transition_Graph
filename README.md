@@ -1,11 +1,15 @@
+# Population-Trends
+
+[https://kohshow.github.io/Population_Transition_Graph/](https://kohshow.github.io/Population_Transition_Graph/)
+
 ## Usage
 
 Get your API-key from [RESAS](https://opendata.resas-portal.go.jp)
 
-Make `APIkey.js` in `/src`
+Make `.env`
 
-```APIkey.js
-export default 'X-API-KEY';
+```.env
+REACT_APP_RESAS_API_KEY="YOUR_API_KEY"
 ```
 
 `$ yarn install`
