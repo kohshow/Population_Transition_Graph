@@ -18,7 +18,7 @@ class App extends Component {
   componentDidMount() {
     // 都道府県の一覧を取得
     fetch('https://opendata.resas-portal.go.jp/api/v1/prefectures', {
-      headers: { 'X-API-KEY': APIkey }
+      headers: { 'X-API-KEY': process.env.REACT_APP_RESAS_API_KEY }
     })
     .then(response => response.json())
     .then(res => {this.setState({ prefectures: res.result });
@@ -34,7 +34,7 @@ class App extends Component {
       // チェックされていなかった場合: データ取得
       // RESAS API 人口構成: https://opendata.resas-portal.go.jp/docs/api/v1/population/composition/perYear.html
       fetch(`https://opendata.resas-portal.go.jp/api/v1/population/composition/perYear?cityCode=-&prefCode=${index + 1}`,
-      { headers: { 'X-API-KEY': APIkey} }
+      { headers: { 'X-API-KEY': process.env.REACT_APP_RESAS_API_KEY } }
       )
       .then(response => response.json())
       .then(res => {

@@ -2,6 +2,7 @@
   "name": "population_trends",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://kohshow.github.io/Population_Transition_Graph/",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
